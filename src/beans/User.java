@@ -1,10 +1,10 @@
 package beans;
 
 public class User {
-    private String email;
-    private String password;
+    private String email = "";
+    private String password = "";
 
-    private String message = "Error validating information.";
+    private String message = "";
 
     public boolean validate(){
 
