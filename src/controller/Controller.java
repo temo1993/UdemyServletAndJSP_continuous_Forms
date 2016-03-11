@@ -40,7 +40,7 @@ public class Controller extends HttpServlet{
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
 
-        String user = req.getParameter("user");
+        String email = req.getParameter("email");
 
         out.write("<html>");
         out.write("<head>");
@@ -50,7 +50,7 @@ public class Controller extends HttpServlet{
         out.write("</head>");
         out.write("<body>");
         out.write("<p>");
-        out.write("user via post method: " + user);
+        out.write("user via post method: " + email);
         out.write("</p>");
         out.write("</body>");
         out.write("</html>");
