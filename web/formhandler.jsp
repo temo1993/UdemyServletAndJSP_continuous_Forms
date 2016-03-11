@@ -11,10 +11,10 @@
     <title>Form Handler Page</title>
 </head>
 <body>
-<jsp:useBean id="user" class="beans.User" scope="session"/>
-<jsp:setProperty name="user" property="*"/>
+<jsp:useBean id="email" class="beans.User" scope="session"/>
+<jsp:setProperty name="email" property="*"/>
 
-User name: <%= user.getUser() %>
-Password: <%= user.getPassword() %>
+User name: <%= email.getEmail() %>
+Password: <%= email.getPassword() %>
 </body>
 </html>

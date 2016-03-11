@@ -13,7 +13,7 @@
 <body>
 
 <form action="Controller" method="post">
-    <input type="text" name="user" value="UserName" title="User"/>
+    <input type="text" name="email" value="UserName" title="User"/>
 
     <input type="submit" name="submitBtn" value="OK"/>
 </form>

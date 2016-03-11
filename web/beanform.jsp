@@ -13,7 +13,7 @@
 <body>
 
 <form action="formhandler.jsp" method="post">
-    <input type="text" name="user" value="UserName" title="User"/><br/>
+    <input type="text" name="email" value="UserName" title="User"/><br/>
     <input type="password" name="password" value="******" title="Password"/><br/>
     <input type="submit" name="submitBtn" value="OK"/>
 </form>
