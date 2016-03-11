@@ -11,9 +11,13 @@
     <title>Self Validating Form Page</title>
 </head>
 <body>
-<form action="formhandler.jsp" method="post">
-    <input type="text" name="email" title="User"/><br/>
-    <input type="password" name="password" title="Password"/><br/>
+<jsp:useBean id="user1" class="beans.User" scope="session"/>
+<jsp:setProperty name="user1" property="*"/>
+
+
+<form action="selfvalidatingform.jsp" method="post">
+    <input type="text" name="email" value="<jsp:getProperty name="user1" property="email"/>" title="User"/><br/>
+    <input type="password" name="password" value="<jsp:getProperty name="user1" property="password"/>" title="Password"/><br/>
     <input type="submit" name="submitBtn" value="OK"/>
 </form>
 </body>
